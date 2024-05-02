@@ -6,6 +6,7 @@
   background-color: var(--Desaturated-Dark-Cyan);
   background-position: center top;
   background-repeat: repeat-x;
+  background-image: url(../../assets//bg-header-desktop.svg);
 }
 
 nav {
