@@ -1,6 +1,7 @@
 import removeIcon from "../../assets/icon-remove.svg";
 import bannerIMG from "../../assets/bg-header-desktop.svg";
 import { useEffect, useState } from "react";
+import "./Header.css";
 interface HeaderProps {
   activeTags: string[];
   removeTag: (tag: string) => void;

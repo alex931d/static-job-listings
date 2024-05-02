@@ -3,6 +3,7 @@ import { IJob, IProject } from "../../contexts/types";
 import Card from "../Card/Card";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
+import "./Body.css";
 gsap.registerPlugin(ScrollTrigger);
 interface BodyProps {
   state: IProject;
