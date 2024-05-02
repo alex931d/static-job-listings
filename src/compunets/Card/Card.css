@@ -155,6 +155,15 @@
   border-radius: 6px;
   transition: all 0.3s ease-in-out;
 }
+.left-tag span,
+.job-tag-inner span {
+  text-transform: capitalize;
+  color: var(--Desaturated-Dark-Cyan);
+  font-size: var(--normal-text-size);
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+}
 @keyframes MOVE-BG {
   from {
     background-position: 0% 0%;
