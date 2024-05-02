@@ -12,6 +12,42 @@
 }
 /*support classes */
 
+@keyframes MOVE-BG {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 50% 0%;
+  }
+}
+
+.active .job-tag-inner {
+  background-image: linear-gradient(
+    45deg,
+    #5ba4a4 41.67%,
+    #69b1b3 41.67%,
+    #69b1b3 50%,
+    #5ba4a4 50%,
+    #5ba4a4 91.67%,
+    #69b1b3 91.67%,
+    #69b1b3 100%
+  );
+  background-repeat: repeat;
+  animation-name: MOVE-BG;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.error {
+  color: var(--Desaturated-Dark-Cyan);
+}
+.highlighted {
+  border-left: 10px solid var(--Desaturated-Dark-Cyan);
+}
+.active .job-tag-inner span {
+  color: white;
+}
+
 .sticky {
   position: fixed;
   top: 0.5%;
