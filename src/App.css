@@ -91,7 +91,7 @@ header {
   .company-content {
     width: 100%;
   }
-  .left-card-container {
+  .card .centerlized .left-card-container {
     width: 100%;
     position: relative;
     padding-top: 20px;
@@ -112,5 +112,24 @@ header {
 
     justify-content: flex-start;
     align-items: center;
+  }
+}
+@media only screen and (width <= 420px) {
+  .top-card-container {
+    flex-direction: column;
+    width: auto;
+    align-items: flex-start;
+  }
+  .card-wrapper {
+    gap: 80px;
+    margin-top: 184px;
+  }
+  .bottom-card-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .bottom-card-container span {
+    width: 100%;
   }
 }
