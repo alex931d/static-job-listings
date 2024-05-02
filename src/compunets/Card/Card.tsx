@@ -16,7 +16,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>((props, ref) => {
       <div ref={ref} className={`card ${job.featured ? "featured" : ""}`}>
         <div className="centerlized">
           <div className="left-card-container">
-            <img src={`/${job.logo}`} alt="logo" />
+            <img src={`/static-job-listings/${job.logo}`} alt="logo" />
             <div className="company-content">
               <div className="top-card-container">
                 <span>{job.company}</span>

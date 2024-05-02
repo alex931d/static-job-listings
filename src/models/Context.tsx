@@ -31,7 +31,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
     isLoading,
     isError,
   } = useQuery<IProject>("gameData", async () => {
-    const response = await fetch("../../src/models/data.json");
+    const response = await fetch("./data.json");
     if (!response.ok) {
       throw new Error("Failed to fetch data");
     }

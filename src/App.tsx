@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import { IJob } from "./contexts/types";
+
 import { useGameContext } from "./models/Context";
 import Header from "./compunets/Header/Header";
 import Body from "./compunets/Body/Body";
 
 function App() {
-  const { state, activeTags, setActiveTags, toggleActive, filteredState } =
+  const {  activeTags, setActiveTags, toggleActive, filteredState } =
     useGameContext();
 
   const [filterState, setFilterState] = useState(filteredState);
